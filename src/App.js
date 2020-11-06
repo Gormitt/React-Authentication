@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from './hoc/Layout/Layout';
 
-function App() {
+const App = props => {
     return (
         <div style = {{textAlign: "center"}}>
-            <Layout />
+            <Layout auth = {props.auth} />
         </div>
     );
 }

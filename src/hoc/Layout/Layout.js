@@ -18,6 +18,7 @@ class Layout extends Component {
                             <li><NavLink to = "/">Home</NavLink></li>
                             <li><NavLink to = "/secret">User</NavLink></li>
                             <li><NavLink to = "/about">About</NavLink></li>
+                            <li><button onClick = {this.props.auth.login}>Login</button></li>
                         </ul>
                     </nav>
                 </header>

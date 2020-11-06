@@ -5,8 +5,8 @@ export default class Auth {
         domain: "gormit.eu.auth0.com",
         clientID: "FX6jN7MxhKmz6dWQoonsuTymxPxpbNUK",
         redirectUri: "http://localhost:3000",
-        audience: "gormit.eu.auth0.com/userinfo",
-        responseType: "token token_id",
+        audience: "articles_api",
+        responseType: "token id_token",
         scope: "openid"
     });
 
