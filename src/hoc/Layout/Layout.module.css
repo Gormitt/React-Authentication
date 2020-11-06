@@ -1,5 +1,6 @@
 .Layout ul {
     list-style: none;
+    padding-right: 40px;
 }
 
 .Layout li {
