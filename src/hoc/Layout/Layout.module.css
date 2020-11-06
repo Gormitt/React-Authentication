@@ -1,0 +1,18 @@
+.Layout ul {
+    list-style: none;
+}
+
+.Layout li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.Layout a {
+    color: black;
+    text-decoration: none;
+}
+
+.Layout a:hover,
+.Layout a:active {
+    color: rgb(34, 112, 64);
+}
