@@ -8,7 +8,7 @@ export default class Auth {
     auth0 = new auth0.WebAuth({
         domain: "gormit.eu.auth0.com",
         clientID: "FX6jN7MxhKmz6dWQoonsuTymxPxpbNUK",
-        redirectUri: "http://localhost:3000",
+        redirectUri: "http://localhost:3000/callback",
         audience: "articles_api",
         responseType: "token id_token",
         scope: "openid"
@@ -16,10 +16,19 @@ export default class Auth {
 
     constructor() {
         this.login = this.login.bind(this);
+        this.logout = this.logout.bind(this);
     }
 
     login() {
         this.auth0.authorize();
+    }
+
+    logout() {
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("id_token");
+        localStorage.removeItem("expires_at");
+        location.pathname = LOGIN_SUCCESS_PAGE;
+        location.reload();
     }
 
     handleAuthentication() {
