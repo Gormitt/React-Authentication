@@ -6,10 +6,10 @@ const LOGIN_FAILURE_PAGE = "/";
 
 export default class Auth {
     auth0 = new auth0.WebAuth({
-        domain:         "gormit.eu.auth0.com",
-        clientID:       "FX6jN7MxhKmz6dWQoonsuTymxPxpbNUK",
+        domain:         process.env.REACT_APP_DOMAIN,
+        clientID:       process.env.REACT_APP_CLIENT_ID,
         redirectUri:    "http://localhost:3000/callback",
-        audience:       "articles_api",
+        audience:       process.env.REACT_APP_AUDIENCE,
         responseType:   "token id_token",
         scope:          "openid"
     });
