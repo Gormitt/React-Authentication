@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import authorize from '../../hoc/Authorize/Authorize';
 
 class UserInfo extends Component {
     render() {
@@ -8,4 +9,4 @@ class UserInfo extends Component {
     }
 }
 
-export default UserInfo;
+export default authorize(UserInfo);

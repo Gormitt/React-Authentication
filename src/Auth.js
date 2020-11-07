@@ -6,12 +6,12 @@ const LOGIN_FAILURE_PAGE = "/";
 
 export default class Auth {
     auth0 = new auth0.WebAuth({
-        domain: "gormit.eu.auth0.com",
-        clientID: "FX6jN7MxhKmz6dWQoonsuTymxPxpbNUK",
-        redirectUri: "http://localhost:3000/callback",
-        audience: "articles_api",
-        responseType: "token id_token",
-        scope: "openid"
+        domain:         "gormit.eu.auth0.com",
+        clientID:       "FX6jN7MxhKmz6dWQoonsuTymxPxpbNUK",
+        redirectUri:    "http://localhost:3000/callback",
+        audience:       "articles_api",
+        responseType:   "token id_token",
+        scope:          "openid"
     });
 
     constructor() {

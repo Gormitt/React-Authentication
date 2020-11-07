@@ -22,9 +22,9 @@ class Layout extends Component {
                 <header>
                     <nav>
                         <ul>
-                            <li><NavLink to = "/">Home</NavLink></li>
-                            <li><NavLink to = "/secret">User</NavLink></li>
-                            <li><NavLink to = "/about">About</NavLink></li>
+                            <li><NavLink exact to = "/">Home</NavLink></li>
+                            <li><NavLink exact to = "/secret">User</NavLink></li>
+                            <li><NavLink exact to = "/about">About</NavLink></li>
                             <li>{button}</li>
                         </ul>
                     </nav>
